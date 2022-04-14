@@ -4,6 +4,7 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { Weather } from './components/Weather';
 import { Counter } from './components/Counter';
+import { WeatherLocation } from './components/WeatherLocation';
 
 import './custom.css'
 
@@ -16,6 +17,7 @@ export default class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
         <Route path='/weather' component={Weather} />
+        <Route path='/WeatherLocation' component={WeatherLocation} />
       </Layout>
     );
   }
